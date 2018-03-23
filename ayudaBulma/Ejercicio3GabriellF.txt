@@ -1,0 +1,56 @@
+Orientado a Objetos C++
+
+#include <stdio.h>
+int main()   //comienza la ejecucion del programa
+{
+       char eleccion;      //eleccion del usuario
+       float voltaje;      //voltaje del circuito en voltios
+       float intensidad;   //intensidad del circuito en amperios
+       float resistencia;  //resistencia del circuito en ohmios
+      
+       printf("\n\nElija la forma de la Ley de Ohm que         corresponda:\n");
+       printf("A] Voltaje   B] Intensidad   C] Resistencia\n");
+       printf("Su eleccion (A, B o C) -->  ");
+       scanf("%c", &eleccion);
+      
+       switch(eleccion)
+       {
+             case 'A':{   //Calculo del voltaje
+                           printf("\nIntroduzca la intensidad en amperios --> ");
+                           scanf("%f", &intensidad);
+                           printf("\nValor de la resistencia en ohmios -->  ");
+                           scanf("%f", &resistencia);
+                           voltaje = intensidad * resistencia;
+                           printf("\nEl voltaje es %f voltios.", voltaje);
+                     }
+                     break;
+            
+             case 'B':{  //calculo de la intensidad
+                           printf("\nIntroduzca el voltaje en voltios -->  ");
+                           scanf("%f", &voltaje);
+                          printf("\nValor de la resistencia en ohmios -->  ");
+                           scanf("%f", &resistencia);
+                           intensidad = voltaje / resistencia;
+                           printf("\nLa intensidad es %f amperios.", intensidad);
+                    }
+                    break;
+                          
+             case 'C':{  //calculo de la resistencia
+                           printf("\nIntroduzca el voltaje en voltios -->  ");
+                           scanf("%f", &voltaje);
+                           printf("\nValor de la intensidad en amperios -->  ");
+                           scanf("%f", &intensidad);
+                           resistencia = voltaje / intensidad;
+                           printf("\nLa resistencia es %f ohmios.", resistencia);
+                      }
+                     break;
+                            
+             default:     printf("\nEleccion incorrecta.\n");
+                           printf("Ejecute el programa seleccionando A, B, o C");
+            
+       }//fin del switch
+      
+       system(pause);
+       return 0;
+      
+}//fin de main

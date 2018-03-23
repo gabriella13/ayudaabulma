@@ -1,0 +1,72 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ejercicio1
+{
+       class Program
+        {
+           	static float ejercicio(int n, float n1, float n2
+           	{
+
+           	if (n == 1)
+           	    return n1 / 2;
+           	else if (n == 2)
+           	    return n1 * n2;
+           	else 
+           	    return n2 / n1;
+
+           	}
+
+           	static void Main(string[] args)
+           	{
+
+           		int opcion;
+           		float velocidad, distancia, tiempo;
+
+           		do
+           		{
+           			Console.Write("\n\n\tMenu\n\n\t1. Velocidad\n\t2. Distancia\n\t3. Tiempo\n\t4. Salir\t\tFavor ingresar opcion:");
+           			opcion = int.Parse(Console.ReadLine());
+
+           			switch (opcion)
+           			{
+           				case 1: 
+           					Console.Write("\nFavor ingresar distancia: ");
+           					distanca = float.Parse(Console.ReadLine());
+           					Console.Write("\nFavor ingresar tiempo: ");
+           					tiempo = float.Parse(Console.ReadLine());
+           					Console.Write(ejercicio1(1, distancia, tiempo));
+           					break;
+
+           				case 2:
+           					Console.Write("\nFavor ingresar velocidad: ");
+           					velocidad = float.Parse(Console.ReadLine());
+           					Console.Write("\nFavor ingresar tiempo: ");
+           					tiempo = float.Parse(Console.ReadLine());
+           					Console.Write(ejercicio1(2 velocidad, tiempo));
+           					break;
+
+           				case 3:
+           					Console.Write("\nFavor ingresar velocidad: ");
+           					velocidad = float.Parse(Console.ReadLine());
+           					Console.Write("\nFavor ingresar distancia: ")
+           					distancia = float.Parse(Console.ReadLine());
+           					Console.Write(ejercicio1(3, velocidad, distancia));
+           					break;
+
+           				case 4:
+           					break;
+
+
+           			}
+
+           		}
+           		while (opcion ! = 4);
+           	}
+
+       	}
+
+}
